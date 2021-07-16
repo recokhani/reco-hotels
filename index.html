@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reco Hotels</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+       <!-- ___________________start hiden navbar____________ -->
+       
+    <nav class="navbar hiden-nav " >
+        <a class="navbar-brand " id="navbar-brand" href="#">RE/CO Hotels</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcol">
+            <span class="navbar-toggler-icon "><i class="fas fa-align-justify "></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarcol">
+            <div class="logo-hiden" id="logo-hiden">
+                <a class="navbar-brand " href="#">RE/CO Hotels</a>
+            </div>
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link" id="hiden-active" href="#header"><span>RECO</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rooms"><span>Rooms</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><span>About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><span>Contact</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+     <!-- ___________________end hiden navbar____________ -->
+
+
+    <!-- ___________________start navbar_____________________ -->
+    <div class="navbar-main">
+        <div class="left-nav-content">
+            <a href="#" class="active"><i class="fas fa-bed"></i> <span style="letter-spacing: 3px;">Reco</span></a>
+            <a href="#rooms" style="scroll-behavior: smooth;"><span>Rooms</span></a>
+            <a href="#about"><span>About</span></a>
+            <a href="#contact"><span>Contact</span></a>
+        </div>
+        <div class="right-nav-btn">
+            <button id="btn"><a  href="#contact">Book Now</a></button>
+        </div>
+    </div>
+    <!-- ___________________end navbar_________________________ -->
+
+    <!-- _____________________start header_________________________ -->
+    <div class="container-header" id="header">
+        <div class="container-he-content">
+            <div class="header-reserve">
+                <h1><i class="fas fa-bed"></i> Reco Hotels</h1>
+            </div>
+            <div class="input-reserve">
+                <table>
+                    <tr>
+                        <td>
+                            <p><i class="fas fa-calendar-times"></i>Check in</p>
+                            <input type="datetime-local" id="data-in">
+                        </td>
+                        <td>
+                            <p><i class="fas fa-calendar-times"></i>Check Out</p>
+                            <input type="datetime-local" id="data-out">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><i class="fas fa-male"></i>Adults</p>
+                            <input type="number" id="adults" placeholder="1">
+                        </td>
+                        <td>
+                            <p><i class="fas fa-child"></i>Kids</p>
+                            <input type="number" id="kids" placeholder="0">
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="btn-reserve">
+                <button><i class="fas fa-search"></i> Search availability</button>
+            </div>
+        </div>
+    </div>
+    <!-- ______________________end header_________________________ -->
+
+    <!-- ______________________start rooms_________________________ -->
+     <div class="container-fluid" id="rooms">
+        <h3>Rooms</h3>
+        <p>Make yourself at home is our slogan. We offer the
+             best beds in the 
+            industry. Sleep well and rest well.</p>
+     </div>
+      <!-- ____________________end rooms_________________________ -->
+
+      <!-- ___________________start chechin ________________ -->
+      <div class="container-fluid pb-4">
+          <div class="row">
+              <div class="col-sm-12 col-md-3" >
+                  <div class="content-cheachin cheack-all">
+                      <p><i class="fas fa-calendar-times"></i>Check In</p>
+                      <input type="datetime-local" >
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-3" >
+                <div class="content-cheachout cheack-all">
+                    <p><i class="fas fa-calendar-times"></i>Check Out</p>
+                    <input type="datetime-local" >
+                </div>
+
+              </div>
+              <div class="col-sm-12 col-md-2" >
+                <div class="content-adults cheack-all">
+                    <p><i class="fas fa-male"></i>Adults</p>
+                    <input type="number" id="adults" placeholder="1">
+                </div>
+
+              </div>
+              <div class="col-sm-12 col-md-2" >
+                <div class="content-kids cheack-all">
+                    <p><i class="fas fa-child"></i>Kids</p>
+                    <input type="number" id="adults" placeholder="0">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2" >
+                <div class="content-search cheack-all">
+                    <p><i class="fas fa-search "></i> Search</p>
+                    <button class="btn-search"><i class="fas fa-search d-md-none"></i>Search</button>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- ___________________start chechin ________________ -->
+
+      <!-- ___________________start kind of hotel ________________ -->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="img">
+                    <img src="assets/img/col-1.jpg" width="100%" alt="">
+                </div>
+                  <div class="content-hotel p-2">
+                     
+                      <div class="text">
+                          <h4>Single Room</h4>
+                          <small>From $<sub>99</sub></small>
+                          <p>single bed</p>
+                          <p>15m<sup>2</sup></p>
+                      </div>
+                      <div class="fasfa">
+                          <i class="fas fa-bath"></i>
+                          <i class="fas fa-phone"></i>
+                          <i class="fas fa-wifi"></i>
+                      </div>
+                      <button class="btn-hotle">
+                          Choose Room
+                      </button>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="img">
+                    <img src="assets/img/col-2.jpg" width="100%" alt="">
+                </div>
+                  <div class="content-hotel p-2">
+                     
+                      <div class="text">
+                          <h4>Double Room</h4>
+                          <small>From $<sub>149</sub></small>
+                          <p>Queen-size bed</p>
+                          <p>25m<sup>2</sup></p>
+                      </div>
+                      <div class="fasfa">
+                          <i class="fas fa-bath"></i>
+                          <i class="fas fa-phone"></i>
+                          <i class="fas fa-wifi"></i>
+                          <i class="fas fa-tv"></i>
+                      </div>
+                      <button class="btn-hotle">
+                          Choose Room
+                      </button>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="img">
+                    <img src="assets/img/col-3.jpg" width="100%" alt="">
+                </div>
+                  <div class="content-hotel p-2">
+                     
+                      <div class="text">
+                          <h4>Deluxe Room</h4>
+                          <small>From $<sub>199</sub></small>
+                          <p>King-size bed</p>
+                          <p>40m<sup>2</sup></p>
+                      </div>
+                      <div class="fasfa">
+                          <i class="fas fa-bath"></i>
+                          <i class="fas fa-phone"></i>
+                          <i class="fas fa-wifi"></i>
+                          <i class="fas fa-tv"></i>
+                          <i class="fas fa-glass-martini-alt"></i>
+                          <i class="fas fa-utensil-spoon"></i>
+                         
+                      </div>
+                      <button class="btn-hotle">
+                          Choose Room
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <!-- ___________________end kind of hotel ________________ -->
+
+       <!-- ___________________start about ________________ -->
+       <div class="container-fluid" id="about">
+           <div class="content-about">
+               <h3>About</h3>
+               <p>Our hotel is one of a kind. It is truely amazing. Lorem 
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                     irure dolor in reprehenderit in voluptate velit esse cillum 
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                     cupidatat non proident, sunt in culpa qui officia deserunt 
+                     mollit anim id est laborum consectetur adipiscing elit, 
+                     sed do eiusmod tempor incididunt ut labore et dolore 
+                   magna aliqua. Ut enim ad minim veniam.</p>
+                   <p id="paypal">We accept : <i class="fab fa-cc-amazon-pay"></i> 
+                    <i class="fas fa-id-card-alt"></i> <i class="fab fa-alipay"></i>
+                </p>
+
+           </div>
+       </div>
+       <!-- ___________________end about ________________ -->
+
+       <!-- ___________________start map ________________ -->
+       <div class="container-fluid">
+           <div class="imgMap">
+               <img src="assets/img/map.jpg" width="100%" alt="">
+           </div>
+           <div class="row">
+               <div class="col-sm-12 col-md-4">
+                    <div class="location-map mt-4 map ">
+                        <p><i class="fas fa-location-arrow"></i> 423 Some adr,Chicago,US</p>
+                    </div>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                     <div class="phone-map mt-4 map">
+                         <p><i class="fas fa-phone"></i> Phone: +00151515</p>
+                     </div>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                     <div class="email-map mt-4 map">
+                         <p>Email:mail@mail.com</p>
+                     </div>
+               </div>
+               
+               
+           </div>
+       </div>
+        <!-- ___________________end map ________________ -->
+        
+        <!-- ___________________start offer ________________ -->
+        <div class="container-fluid offer-hotels ">
+            <p><span >i</span>  On demand, we can offer playstation, babycall, 
+                children care, dog equipment, etc.</p>
+        </div>
+        <!-- ________________start offer  and our hotels_____ -->
+
+        <div class="container-fluid mb-5">
+            <h4>Our Hotels</h4>
+            <p>You can find our hotels anywhere in the world:</p>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="img-big p-3"><img src="assets/img/our-hotel-col-6.jpg" width="100%" alt=""></div>
+                    <div class="text-big">
+                        <p>Cinque Terre</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="img-small" >
+                                    <img src="assets/img/our-hotel-col-s-1.jpg" width="100%" alt="">
+                                </div>
+                                <div id="text-small-2">
+                                    <p>New York</p>
+                                </div>
+                                <div class="img-small" >
+                                    <img src="assets/img/our-hotel-col-s-2.jpg" width="100%" alt="">
+                                </div>
+                                <div id="text-small">
+                                    <p>Pisa</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-small" >
+                                    <img src="assets/img/our-hotel-col-s-3.jpg" width="100%" alt="">
+                                </div>
+                                <div id="text-small-2">
+                                    <p>San Francisco</p>
+                                </div>
+                                <div class="img-small" >
+                                    <img src="assets/img/our-hotel-col-s-4.jpg" width="100%" alt="">
+                                </div>
+                                <div id="text-small">
+                                    <p>Paris</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- ________________end offer  and our hotels__________ -->
+
+      <!-- ________________start wave email_____ -->
+     <div class="conteiner-offers">
+        
+         <div class="c-f-content">
+             <div class="c-f-text">
+                 <h1>Get the best offers first!</h1>
+                 <p>Join our newsletter.</p>
+                
+             </div>
+             <div class="c-f-inp">
+               
+                 <input type="text" id="input-c-f" placeholder="Your Email address">
+                 <label class="email-inp" >E-mail</label>
+               
+             </div>
+             <div class="button-f" id="btn-f-f">
+                 Subscribe
+             </div>
+
+         </div>
+     </div>
+     <!-- ________________end wave email_____ -->
+
+     <!-- ________________start contact_____ -->
+     <div class="container-fluid mb-2" id="contact">
+         <h3>Contact</h3>
+         <p>If you have any questions, do not hesitate to 
+             ask them.</p>
+             <small> <i class="fas fa-location-arrow"></i> Chicago, US</small><br>
+             <small><i class="fas fa-phone"></i> Phone: +00 151515</small><br>
+             <small><i class="fas fa-envelope"></i> Email: mail@mail.com</small><br>
+
+             <div class="input-footer">
+                 <input type="text" placeholder="Name"><br>
+                 <input type="text" placeholder="Email"><br>
+                 <input type="text" placeholder="Message">
+             </div>
+             <div class="button-footer mb-5">
+                 <button class="btn-f">
+                     SEND MESSAGE
+                 </button>
+             </div>
+     </div>
+     <!-- ________________end contact_____ -->
+     <div class="anchor">
+        <a href="#header"><i class="fas fa-angle-up"></i></a>
+    </div>
+     <!-- ________________start footer -->
+     <div class="container-fluid-footer ">
+        
+         <p>Find Us On</p>
+         
+         <div class="social-media">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-snapchat-square"></i>
+            <i class="fab fa-pinterest"></i>
+         </div>
+         <p class="pb-5">Powered by <a href="#">RezaKhani</a></p>
+
+         <div class="playPuse-aroynd">
+             <div class="spaceControler"></div>
+             <div class="contoroler "> </div>
+                 
+            
+         </div>
+         
+     </div>
+     <!-- ________________end footer -->
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
